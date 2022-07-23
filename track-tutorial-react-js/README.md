@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# React (JavaScript) テンプレート
+React (JavaScript) で受験するためのテンプレートです。
+チュートリアル問題の指示に従って、React アプリケーションをビルドし、track 上で提出してみましょう。
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### **注意**
+- 本プロジェクトは [Create React App](https://github.com/facebook/create-react-app) によって生成されています。
+- track で解答するために、本テンプレートを使用することは**必須ではありません**。任意のフレームワークや UI ライブラリが利用できます。最終的に提出する必要があるのは、ビルドされた生成物です。
+- `node` のバージョンは `17.9.1` で動作することを確認しています。
 
-## Available Scripts
+## 可能なコマンド
+このプロジェクトのディレクトリ内で、以下のコマンドを実行することができます。
 
-In the project directory, you can run:
+### `npm install`
+開発やビルドに必要なモジュールをインストールします。必ず最初に実行してください。
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm run`
+アプリケーションを開発モードで実行します。
+[http://localhost:3000](http://localhost:3000) を開き、ブラウザで確認することができます。
 
 ### `npm run build`
+アプリケーションをビルドし、`build` ディレクトリに生成ファイルを保存します。track のチャレンジに解答するためには、ビルドされた生成ファイルをアップロードする必要があります。
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 受験の流れ
+1. `npm install` で、必要なモジュールをインストールする。
+2. `npm start` で、[http://localhost:3000](http://localhost:3000) に開発用のサーバーを立ち上げる。
+3. `npm run build` で、提出用の生成ファイルをビルドし、ファイルを track にアップロードする。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+順に説明します。
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. `npm install` で、必要なモジュールをインストールする。 
+ローカル環境にこのリポジトリをダウンロードします。
+```
+> git clone git@github.com:givery-technology/track-tutorials.git
+> cd track-tutorials/track-tutorial-react-js
+```
 
-### `npm run eject`
+次に、必要なモジュールをインストールします。
+```
+> npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. `npm start` で、[http://localhost:3000](http://localhost:3000) に開発用のサーバーを立ち上げる。
+開発用のサーバーを立ち上げます。
+```
+npm start
+```
+[http://localhost:3000](http://localhost:3000) にアクセスし、以下のような画面が表示されることを確認してください。
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+これは、チュートリアル問題の仕様を満たすアプリケーションです。 試験本番では、好きなように開発を進めてください。
+使用するライブラリやフレームワークに制限はありません。
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3. `npm run build` で、提出用の生成ファイルをビルドし、ファイルを track にアップロードする。
+開発が終了したら、生成ファイルをビルドし track で提出してみましょう。
+以下のコマンドを実行して、`build` ディレクトリに提出用のファイルを生成してください。
+```
+npm run build
+```
+生成されたファイルツリーは以下のようになります。
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+build/
+├── asset-manifest.json
+├── index.html
+└── static
+    └── js
+        ├── main.27f6b6d7.js
+        ├── main.27f6b6d7.js.LICENSE.txt
+        └── main.27f6b6d7.js.map
+```
 
-## Learn More
+#### **注意**
+- 提出するファイルは、`index.html` と `main.27f6b6d7.js` です。その他のファイルはアップロードする必要がありません。
+- `main.27f6b6d7.js` などのファイルは、毎回ファイル名が異なります。
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ビルドされた生成ファイルをアップロードします。
+まず、track の UI 上で、`static` フォルダと `js` フォルダを追加します。ファイルツリーの構造に注意してください。
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+画像が入る
 
-### Code Splitting
+次に、`index.html` ファイルと `main.27f6b6d7.js` ファイルを追加します。こちらも、ファイルツリーの構造に注意しましょう。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+画像が入る
 
-### Analyzing the Bundle Size
+track 画面右下の**プレビュー**で、実装したアプリケーションが表示されることを確認したら、**テストを実行**ボタンを押してください。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+満点が取れたら成功です。お疲れ様でした！
