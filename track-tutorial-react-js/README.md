@@ -42,7 +42,7 @@ React (JavaScript) で受験するためのテンプレートです。
 ### 2. `npm start` で、[http://localhost:3000](http://localhost:3000) に開発用のサーバーを立ち上げる。
 開発用のサーバーを立ち上げます。
 ```
-npm start
+> npm start
 ```
 [http://localhost:3000](http://localhost:3000) にアクセスし、以下のような画面が表示されることを確認してください。
 
@@ -53,7 +53,7 @@ npm start
 開発が終了したら、生成ファイルをビルドし track で提出してみましょう。
 以下のコマンドを実行して、`build` ディレクトリに提出用のファイルを生成してください。
 ```
-npm run build
+> npm run build
 ```
 生成されたファイルツリーは以下のようになります。
 
