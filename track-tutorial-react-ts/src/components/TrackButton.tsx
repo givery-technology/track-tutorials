@@ -3,9 +3,7 @@ import React from 'react';
 interface Props {
   onClick: () => void;
 }
-export const TrackButton: React.FC<Props> = ({
-    onClick
-  }) => {
+export const TrackButton: React.FC<Props> = ({ onClick }) => {
 
   const trackButtonStyle: React.CSSProperties = {
     display: "inline-block",
