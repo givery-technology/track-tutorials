@@ -1,27 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <TrackButton :onClick="onClick" />
+  <TrackText :msg='state.text' />
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import { defineComponent, reactive } from 'vue';
+import TrackButton from './components/TrackButton.vue';
+import TrackText from './components/TrackText.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    TrackButton,
+    TrackText
+  },
+  setup() {
+    const state = reactive({
+      text: "",
+    });
+    const onClick = () => {
+      state.text = "hello track";
+    };
+    return { state, onClick };
   }
 });
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
