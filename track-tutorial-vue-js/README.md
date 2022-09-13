@@ -1,24 +1,23 @@
-# track-tutorial-vue-js
+# Vue (JavaScript) テンプレート
+Vue (JavaScript) で受験するためのテンプレートです。
+チュートリアル問題の指示に従って、Vue アプリケーションをビルドし、track 上で提出してみましょう。
 
-## Project setup
-```
-npm install
-```
+#### **注意**
+- 本プロジェクトは [Vue CLI](https://cli.vuejs.org/guide/creating-a-project.html) によって生成されています。
+- track で解答するために、本テンプレートを使用することは**必須ではありません**。任意のフレームワークや UI ライブラリが利用できます。最終的に提出する必要があるのは、ビルドされた生成物です。
+- `node` のバージョンは `14.17.0`, `npm` のバージョンは `6.14.13` で動作することを確認しています。
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 可能なコマンド
+このプロジェクトのディレクトリ内で、以下のコマンドを実行することができます。
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### `npm install`
+開発やビルドに必要なモジュールをインストールします。必ず最初に実行してください。
 
-### Lints and fixes files
-```
-npm run lint
-```
+### `npm run serve`
+アプリケーションを開発モードで実行します。
+[http://localhost:8080](http://localhost:8080) を開き、ブラウザで確認することができます。
+アプリケーションに変更を加えるためには、`src` ディレクトリ以下のファイルを編集してください。
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### `npm run build`
+アプリケーションをビルドし、`build` ディレクトリに生成ファイルを保存します。track のチャレンジに解答するためには、ビルドされた生成ファイルをアップロードする必要があります。
+
