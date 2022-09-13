@@ -14,7 +14,7 @@ export default {
 
 <style scoped>
 div {
-  font-family: "revert-layer";
-  font-size: "2.8vw";
+  font-family: revert-layer;
+  font-size: 2.8vw;
 }
 </style>

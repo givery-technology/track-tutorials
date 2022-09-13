@@ -8,7 +8,7 @@ export default {
     onClick: {
       type: Function,
       required: true
-    },
+    }
   }
 }
 </script>
