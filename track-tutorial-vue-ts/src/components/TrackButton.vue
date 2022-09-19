@@ -1,5 +1,5 @@
 <template>
-  <button v-on:click="onClick">Click me!!</button>
+  <button id="track-button" v-on:click="onClick">Click me!!</button>
 </template>
 
 <script lang="ts">
