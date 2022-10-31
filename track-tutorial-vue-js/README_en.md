@@ -1,5 +1,7 @@
-# Vue (TypeScript) template
-This is a template for taking frontend challenges using Vue (TypeScript).
+# Vue (JavaScript) template
+
+This is a template for taking frontend challenges using Vue (JavaScript).
+
 Follow the instructions in the tutorial question to build and submit your Vue application on Track. 
 
 #### **Notes**
