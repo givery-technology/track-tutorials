@@ -1,5 +1,5 @@
-# React (TypeScript) template
-This is a template for taking frontend challenges using React (TypeScript).
+# React (JavaScript) template
+This is a template for taking frontend challenges using React (JavaScript).
 Follow the instructions in the tutorial question to build and submit your React application on Track. 
 
 #### **Notes**
