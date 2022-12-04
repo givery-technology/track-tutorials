@@ -1,5 +1,5 @@
 <template>
-  <div>{{ msg }}</div>
+  <div id="track-text">{{ msg }}</div>
 </template>
 
 <script lang="ts">

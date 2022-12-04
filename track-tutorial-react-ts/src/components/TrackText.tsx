@@ -11,6 +11,6 @@ export const TrackText: React.FC<Props> = ({ text }) => {
   }
 
   return (
-    <div style={trackTextStyle}>{text}</div>
+    <div style={trackTextStyle} id="track-text">{text}</div>
   );
 }
