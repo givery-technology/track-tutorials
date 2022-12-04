@@ -6,7 +6,7 @@ const TrackText = (props) => {
   }
 
   return (
-    <div style={trackTextStyle}>{props.text}</div>
+    <div style={trackTextStyle} id="track-text">{props.text}</div>
   );
 }
 
